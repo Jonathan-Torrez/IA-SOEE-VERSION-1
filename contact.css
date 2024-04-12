@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:#081b29;
+    color: #fffcfc;
+
+}
+
+.header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 10%;
+background: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+}
+
+
+.logo{
+ position: relative;
+ font-size: 25px;
+ color:#ededed;
+ text-decoration: none;
+ font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRinght 1s ease forwards;
+    animation-delay: .4;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s;
+}
+.navbar a:hover,
+.navbar a.activar{
+    color: aquamarine;
+}
+
+.Inicio{
+    height: 100vh;
+    background:url(Portadaoff.png) no-repeat ;
+    background-size: cover;
+    background-position: 10%;
+    display: flex;
+    align-items:center ;
+    padding:0 10%;
+    
+}
+.Inicio-Contenido{
+    max-width: 600px;
+}
+.Inicio-Contenido h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.986);
+    font-size: 28px;
+    font-weight: 900px;
+    line-height: 1.5;
+}
+.Inicio-Contenido h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRinght 1s ease forwards;
+    animation-delay: 0.6s;
+
+}
+.Inicio-Contenido h3{
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 700;
+    color: #8686868f;
+    
+}
+.Inicio-Contenido p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.Inicio-Contenido .btn-me{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+
+}
+.profile-image {
+    float: inline-start; /* Colocar la imagen a la derecha del párrafo */
+    margin-left: 60px; /* Espacio entre la imagen y el texto */
+    margin-top: 100px; /* Espacio entre la imagen y el texto en la parte superior */
+    border-radius: 50%; /* Hacer que el borde de la imagen sea redondeado */
+  }
+  
+.btn-me a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: 183e5a;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 8px;
+    font-size: 19px;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+.btn-me a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.btn-me a:nth-child(2){
+    background: transparent;
+    color:rgb(253, 255, 254);
+}
+
+.btn-me a:nth-child(2):hover{
+    background:rgb(132, 218, 189) ;
+}
+.btn-me a:nth-child(2)::before{
+    background:rgb(132, 218, 189) ;
+}
+
+.btn-me a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(132, 218, 189) ;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-me a:hover::before   {
+    width: 100%;
+}
+
+.Red-Social{
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.Red-Social a:not(:last-child) {
+    margin-right: 15px;
+  }
+
+.Red-Social a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    margin: 20px;
+    background: transparent;
+    border: 5px solid rgb(1, 182, 122);
+    border-radius: 0%;
+    font-size: 24px;
+    color: #ededed;
+    text-decoration: none;
+    overflow: hidden;
+}
+.Red-Social a::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(132, 218, 189);
+    z-index: -1;
+    transition: 0.8s;
+
+}
+.Red-Social a:hover::before{
+    width: 100%;
+}
+
+.imagen-Hover{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 300%;
+    background:transparent;
+    
+}
+
+.imagen-Hover:hover{
+    background-color: #1b435c;
+    animation-delay: 6s;
+   
+    
+}
+/* Animacios */
+@keyframes showRinght{
+    100%{
+        width: 0;
+    }
+}
+
+
+/* EDUCACION */
+
+p{
+    max-width: 1200px; /* Define el ancho máximo del párrafo */
+    margin-left: auto; /* Centra el párrafo horizontalmente */
+    margin-right: auto;
+}
+h2{
+    text-align: center;
+    color: #538fb9;
+}
+.educacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    
+}
+
+.education-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+    min-height: auto;
+    margin-top: 35px;
+}
+.year{
+    color:rgb(132, 218, 189);
+    text-align: center;
+    font-size: 13px;
+ 
+}
